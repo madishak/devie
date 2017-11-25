@@ -1,0 +1,328 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    vertical-align: baseline;
+    font-family: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+body {
+    background: white;
+    line-height: 1;
+    color: black;
+}
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+caption, th, td {
+    font-weight: normal;
+    text-align: left;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: "";
+}
+blockquote, q {
+    quotes: "" "";
+}
+
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: local('Gilroy-ExtraBold');
+    src: url('fonts/Gilroy-ExtraBold.svg') format('svg'),
+    url('fonts/Gilroyextrabold.eot') format('embedded-opentype'),
+    url('fonts/Gilroy-ExtraBold.woff') format('woff'),
+    url('fonts/Gilroyextrabold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Light';
+    src: local('Gilroy-Light');
+    src: url('fonts/Gilroy-Light.svg') format('svg'),
+    url('fonts/Gilroylight.eot') format('embedded-opentype'),
+    url('fonts/Gilroy-Light.woff') format('woff'),
+    url('fonts/Gilroylight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Regular';
+    src: local('OpenSans-Regular');
+    src: url('fonts/OpenSans.svg') format('svg'),
+    url('fonts/OpenSans-Regular.eot') format('embedded-opentype'),
+    url('fonts/OpenSans.woff') format('woff'),
+    url('fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: local('OpenSans-Light');
+    src: url('fonts/OpenSans-Light.svg') format('svg'),
+    url('fonts/OpenSans-Light.eot') format('embedded-opentype'),
+    url('fonts/OpenSans-Light.woff') format('woff'),
+    url('fonts/OpenSans-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    margin: auto;
+    left: 0; right:0;
+    width: 1160px;
+    background: #f7e296;
+    margin-top: 39px;
+    /*height: 100px;*/
+}
+.wrapper {
+    margin: auto;
+    left: 0; right:0;
+    width: 1036px;
+}
+.header_logo {
+    position: relative;
+    top: -22px;
+    font-family: 'Gilroy-ExtraBold', Verdana, sans-serif;
+    font-size: 48px;
+
+}
+.header_logo a {
+    position: absolute;
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+.header_logo a:hover {
+    color: #464646;
+}
+.header_logo a:active {
+    color: #666666;
+}
+
+.header__block {
+    padding-top: 32px;
+}
+.header__block__form {
+    display: inline-block;
+}
+/*.header__block__form__image {
+    background: transparent url("icons/search.png") center center no-repeat;
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+}*/
+.header__block__form__input {
+    background: transparent url("icons/search.png") center left no-repeat;
+    border: none;
+    font-family: OpenSans-Light, Verdana, sans-serif;
+    font-size: 13px;
+    color: #d2c07f;
+    vertical-align: bottom;
+    padding-left: 26px;
+    float: left;
+}
+.header__block__form__input:hover {
+    color: #635a3c;
+}
+.focus {
+    border-bottom: 2px solid black;
+    padding-top: 17px ;
+    padding-bottom: 20px ;
+    padding-left: 26px;
+    float: left;
+    width: 356px;
+}
+.header__block__form__button {
+    border: 2px solid black;
+    padding: 17px;
+    background: none;
+    font-family: OpenSans-Light, Verdana, sans-serif;
+    vertical-align: bottom;
+    float: left;
+    display: none;
+}
+.header__block__form__button:hover {
+    background: black;
+    color: white;
+    font-size: 15px;
+}
+.header__block__form__button:active {
+    color: #4d4d4d;
+}
+
+.header__inner {
+    display: inline-block;
+    float: right;
+}
+.header__block__login {
+    display: inline-block;
+}
+.header__block__login__image {
+    background: transparent url("icons/user.png");
+    height: 12px;
+    width: 13px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.header__block__login__name, .header__block__login__exit {
+    font-family: OpenSans-Light, Verdana, sans-serif;
+    font-size: 15px;
+    display: inline-block;
+    color: black;
+}
+
+.header__block__login__exit a {
+ text-decoration: none;
+    color: #d2c07f;
+    margin-left: 19px;
+}
+.header__block__login__exit a:hover {
+    color: #635a3c;
+}
+.header__block__login__exit a:active {
+    color: #4d4d4d;
+}
+
+.header__block__comparison {
+    display: inline-block;
+    margin-left: 64px;
+
+}
+.header__block__comparison__title a, .header__block__basket__title a {
+    font-family: OpenSans-Light, Verdana, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+.header__block__comparison__title:before {
+    content: url("icons/comparison.png");
+    padding-right: 10px;
+
+}
+.header__block__comparison:hover, .header__block__basket:hover {
+    opacity: 0.6;
+}
+.header__block__comparison:active, .header__block__basket:active {
+    opacity: 0.3;
+}
+
+.header__block__basket {
+    display: inline-block;
+    margin-left: 42px;
+}
+.header__block__basket__title:before {
+    content: url("icons/basket.png");
+    padding-right: 10px;
+}
+
+.header__block2 {
+    padding-top: 50px;
+
+}
+
+.header__block2__menu__title, .header__block2__delivery, .header__block2__guarantee, .header__block2__contacts {
+    display: inline-block;
+    font-family: 'Gilroy-ExtraBold', Verdana, sans-serif;
+    font-size: 18px;
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+.header__block2__menu__title:after {
+    content: url("icons/plus.png");
+    padding-left: 16px;
+    vertical-align: -2px;
+    cursor: pointer;
+}
+
+.header__block2__menu__title:hover, .header__block2__delivery:hover, .header__block2__guarantee:hover,
+.header__block2__contacts:hover,
+.header__block2__menu__nav li:hover
+{
+    opacity: 0.6;
+}
+.header__block2__menu__title:active, .header__block2__delivery:active, .header__block2__guarantee:active,
+.header__block2__contacts:active,
+.header__block2__menu__nav li:active{
+    opacity: 0.3;
+}
+
+.header__block2__delivery a, .header__block2__guarantee a, .header__block2__contacts a {
+    text-decoration: none;
+    color: black;
+}
+
+.header__block2__guarantee {
+    margin-left: 28px;
+}
+.header__block2__contacts {
+    margin-left: 112px;
+}
+.header__block2__menu__nav {
+    display: none;
+}
+.header__block2__menu__nav ul {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 75px;
+}
+.header__block2__menu__nav li {
+    font-family: OpenSans-Light, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 36px;
+}
+.header__block2__menu__nav a {
+    text-decoration: none;
+    color: black;
+}
+
+.breadcrumbs {
+    font-family: 'Gilroy-ExtraBold', Verdana, sans-serif;
+    font-size: 47px;
+    padding-top: 44px;
+}
+
+.breadcrumbs__nav {
+    padding-top: 23px;
+    font-family: OpenSans-Light, Verdana, sans-serif;
+    font-size: 14px;
+}
+.breadcrumbs__nav  li {
+    display: inline-block;
+}
+.breadcrumbs__nav a {
+    text-decoration: none;
+    color: #b2b2b2;
+}
+.breadcrumbs__nav a:hover {
+    color: #666666;
+}
+.breadcrumbs__nav a:active {
+    color: #e5e5e5;
+}
+.breadcrumbs__nav  img {
+    margin-right: 15px;
+    margin-left: 20px;
+}

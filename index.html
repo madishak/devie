@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Device</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+
+var input = $('.header__block__form__input');
+        $(input).focus(function () {
+            $('.header__block__form__button').css("display", "block");
+            $(this).addClass('focus');
+        });
+        $(input).blur(function () {
+            $('.header__block__form__button').css("display", "none");
+            $(this).removeClass('focus');
+        });
+
+
+        $('.header__block2__menu__title').hover(function () {
+            $('.header__block2__menu__nav').show();
+        }, function () {
+            $(this).click(function () {
+                $('.header__block2__menu__nav').hide();
+            });
+            $('.header__block2__menu__nav li').click(function () {
+                $('.header__block2__menu__nav').hide();
+            })
+        })
+
+    })
+</script>
+<header>
+    <div class="wrapper">
+<div class="header_logo"><a href="#">device</a></div>
+
+    <div class="header__block">
+        <form class="header__block__form" action="" method="get">
+            <input class="header__block__form__input" type="search" placeholder="Поиск по сайту">
+            <button type="submit" class="header__block__form__button">Найти</button>
+        </form>
+        <div class="header__inner">
+        <div class="header__block__login">
+            <div class="header__block__login__image"></div>
+            <div class="header__block__login__name">Валентин Петухов</div>
+            <div class="header__block__login__exit"><a href="#">Выйти</a></div>
+        </div>
+        <div class="header__block__comparison">
+            <div class="header__block__comparison__title"><a href="#"> Сравнить</a></div>
+        </div>
+        <div class="header__block__basket">
+            <div class="header__block__basket__title"><a href="#"> Корзина</a></div>
+        </div>
+        </div>
+    </div>
+
+        <div class="header__block2">
+            <div class="header__block2__menu__title">каталог товаров</div>
+
+            <div class="header__inner">
+                <div class="header__block2__delivery"><a href="#">доставка</a></div>
+                <div class="header__block2__guarantee"><a href="#">гарантия</a></div>
+                <div class="header__block2__contacts"><a href="#">контакты</a></div>
+            </div>
+        </div>
+
+        <div class="header__block2__menu__nav">
+            <ul>
+                <li><a href="#">Виртуальная реальность</a></li>
+                <li><a href="#">Моноподы для селфи</a></li>
+                <li><a href="#">Экшн-камеры</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Фитнес-браслеты</a></li>
+                <li><a href="#">Умные часы</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Квадрокоптеры</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</header>
+
+<section class="breadcrumbs">
+    <div class="wrapper">
+    <div class="breadcrumbs__title">Моноподы для селфи</div>
+
+        <div class="breadcrumbs__nav">
+            <ul>
+                <li>
+                    <a href="#">Главная</a>
+                    <img src="icons/breadcrumb_array.png">
+                </li>
+                <li>
+                    <a href="#">Каталог товаров</a>
+                    <img src="icons/breadcrumb_array.png">
+               </li>
+                <li><a href="#">Моноподы для селфи</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+</body>
+</html>
