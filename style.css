@@ -326,3 +326,76 @@ header {
     margin-right: 15px;
     margin-left: 20px;
 }
+
+.panel {
+    padding-top: 53px;
+    float: left;
+}
+.panel__title {
+    display: inline-block;
+    background: #dbdbdb;
+    padding: 27px 169px 29px 168px;
+   }
+
+.panel__title span, .panel__menu__title {
+    letter-spacing: 3px;
+    font-family: 'Gilroy-ExtraBold', Verdana, sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.panel__menu {
+    display: inline-block;
+    padding: 27px 137px 29px 72px;
+    background: #ebebeb;
+    float: right;
+}
+.panel__menu__title {
+    display: inline-block;
+    margin-right: 56px;
+}
+
+.panel__menu__text  {
+    display: inline-block;
+    margin-right: 30px;
+
+}
+.panel__menu__text a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.3;
+}
+.panel__menu__text a:hover {
+    opacity: 0.6;
+}
+.panel__menu__text a:active {
+    opacity: 1;
+}
+
+.panel__menu__block {
+    display: inline-block;
+}
+
+.panel__menu__sort__up {
+    background: transparent url("icons/sort_up.png");
+    height: 9px;
+    width: 17px;
+    display: inline-block;
+    margin-left: 113px;
+    opacity: 0.3;
+}
+.panel__menu__sort__down {
+    background: transparent url("icons/sort_down.png");
+    height: 9px;
+    width: 17px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-right: 10px;
+    opacity: 0.3;
+}
+
+.panel__menu__sort__up:hover, .panel__menu__sort__down:hover {
+  opacity: 0.6;
+}
+.panel__menu__sort__up:active, .panel__menu__sort__down:active {
+    opacity: 1;
+}
