@@ -328,16 +328,24 @@ header {
 }
 
 .panel {
+    display: block;
     padding-top: 53px;
-    float: left;
+
 }
 .panel__title {
     display: inline-block;
     background: #dbdbdb;
-    padding: 27px 169px 29px 168px;
+    /*padding: 27px 0 29px 0;*/
+   /*margin: 27px 169px 29px 168px;*/
+    width: 32.5%;
+    /*max-width: 467px;*/
+    float: left;
    }
-
-.panel__title span, .panel__menu__title {
+.panel__title div {
+    /*margin-left: 168px;*/
+    margin: 27px 169px 29px 168px;
+}
+.panel__title div, .panel__menu__title {
     letter-spacing: 3px;
     font-family: 'Gilroy-ExtraBold', Verdana, sans-serif;
     font-size: 16px;
@@ -345,10 +353,21 @@ header {
 }
 .panel__menu {
     display: inline-block;
-    padding: 27px 137px 29px 72px;
+    /*padding: 27px 137px 29px 72px;*/
+
     background: #ebebeb;
     float: right;
+    width: 67.5%;
+    /*max-width: 971px;*/
 }
+.panel__inner {
+    /*margin: auto;*/
+    /*left:0; right: 0;*/
+    padding: 27px 140px 29px 72px;
+    /*width: 52.7%;*/
+    max-width: 761px;
+}
+
 .panel__menu__title {
     display: inline-block;
     margin-right: 56px;
@@ -373,6 +392,7 @@ header {
 
 .panel__menu__block {
     display: inline-block;
+    float: right;
 }
 
 .panel__menu__sort__up {
@@ -380,7 +400,7 @@ header {
     height: 9px;
     width: 17px;
     display: inline-block;
-    margin-left: 113px;
+    margin-left: 72px;
     opacity: 0.3;
 }
 .panel__menu__sort__down {
@@ -389,7 +409,7 @@ header {
     width: 17px;
     display: inline-block;
     margin-left: 25px;
-    margin-right: 10px;
+    /*margin-right: 25px;*/
     opacity: 0.3;
 }
 
@@ -398,4 +418,189 @@ header {
 }
 .panel__menu__sort__up:active, .panel__menu__sort__down:active {
     opacity: 1;
+}
+
+.sidebar {
+    display: block;
+    clear: both;
+    background: #efefef;
+    width: 32.5%;
+}
+
+.sidebar__block {
+    padding: 68px 66px 526px 168px;
+}
+.sidebar__line{
+    border-top: 2px solid black;
+    width: 200px;
+}
+
+.sidebar__title {
+    font-family: 'Gilroy-ExtraBold', Verdana, sans-serif;
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-top: 13px;
+
+}
+
+.sidebar__progress {
+    height: 1px;
+    width: 200px;
+    margin: 40px 0 66px 0;
+}
+
+.sidebar__form__checkbox {
+    width: 200px;
+    margin-top: 28px;
+    margin-bottom: 39px;
+}
+.sidebar__checkbox__label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-family: OpenSans-Light, Verdana, sans-serif;
+    font-size: 14px;
+    padding-left: 35px;
+    margin-top: 18px;
+    vertical-align: 5px;
+}
+.sidebar__checkbox__label__name {
+    vertical-align: -5px;
+}
+
+.sidebar__checkbox__label > .sidebar__checkbox {
+    position: absolute;
+    opacity: 0;
+   }
+
+.sidebar__checkbox__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #dbdbdb;
+}
+
+.sidebar__checkbox__checkmark:hover {
+    background-color: #cecece;
+}
+.sidebar__checkbox__label input:checked ~ .sidebar__checkbox__checkmark:active {
+    background-color: #c4c4c4;
+}
+.sidebar__checkbox__label input:checked ~ .sidebar__checkbox__checkmark {
+    background-color: #dbdbdb;
+}
+.sidebar__checkbox__label:hover input:checked ~ .sidebar__checkbox__checkmark {
+    background-color: #cecece;
+}
+.sidebar__checkbox__label:hover input:checked ~ .sidebar__checkbox__checkmark:active {
+    background-color: #c4c4c4;
+}
+.sidebar__checkbox__checkmark:after {
+    content: url("icons/tick.png");
+    left: 5px;
+    top: 5px;
+    position: absolute;
+    display: none;
+}
+.sidebar__checkbox__label input:checked ~ .sidebar__checkbox__checkmark:after {
+    display: block;
+}
+
+.sidebar__form__radio {
+    margin-bottom: 54px;
+}
+
+.sidebar__radio__label {
+    width: 30px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-family: OpenSans-Light, Verdana, sans-serif;
+    font-size: 14px;
+    padding-left: 35px;
+    margin-top: 18px;
+
+}
+.sidebar__radio__label__name {
+    vertical-align: -7px;
+}
+.sidebar__radio__label > .sidebar__radio {
+    position: absolute;
+    opacity: 0;
+}
+
+.sidebar__radio__checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background: #efefef;
+    border: 2px solid #c7c7c7;
+    border-radius: 50%;
+}
+
+.sidebar__radio__checkmark:hover {
+    border: 2px solid #bcbcbc;
+}
+
+.sidebar__radio__label input:checked ~ .sidebar__radio__checkmark:active {
+    border: 2px solid #afafaf;
+}
+.sidebar__radio__label input:checked ~ .sidebar__radio__checkmark {
+    border: 2px solid #c6c6c6;
+}
+.sidebar__radio__label:hover input:checked ~ .sidebar__radio__checkmark {
+    border: 2px solid #dfdfdf;
+}
+.sidebar__radio__label:active input:checked ~ .sidebar__radio__checkmark {
+    border: 2px solid #acacac;
+}
+
+.sidebar__radio__checkmark:after {
+    content: url("icons/radio_tick.png");
+    left: 8px;
+    top: 5px;
+    position: absolute;
+    display: none;
+}
+.sidebar__radio__label input:checked ~ .sidebar__radio__checkmark:after {
+    display: block;
+}
+
+.sidebar__radio__label input:checked ~ .sidebar__radio__checkmark {
+    border: 2px solid #c6c6c6;
+}
+.sidebar__button__block {
+    position: relative;
+}
+.sidebar__button__background {
+    /*position: relative;*/
+    border-top: 7px solid  #f0c52e;
+    width: 200px;
+}
+
+.sidebar__button {
+    position: absolute;
+    top: -6px; left: 43px;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Gilroy-ExtraBold', Verdana, sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.sidebar__button:hover {
+    background-color: #f0c52e;
+    height: 30px;
+    width: 200px;
+    left:0;
+    padding-top: 14px;
+}
+.sidebar__button:active span{
+    opacity: 0.3;
 }

@@ -109,8 +109,9 @@ var input = $('.header__block__form__input');
 
 <section class="panel">
 
-    <div class="panel__title"><span>фильтр:</span></div>
+    <div class="panel__title"><div>фильтр:</div></div>
     <div class="panel__menu">
+        <div class="panel__inner">
         <div class="panel__menu__title">сортировка:</div>
         <div class="panel__menu__text"><a href="#">По цене</a></div>
         <div class="panel__menu__text"><a href="#">По типу</a></div>
@@ -119,7 +120,78 @@ var input = $('.header__block__form__input');
         <div class="panel__menu__sort__up"></div>
         <div class="panel__menu__sort__down"></div>
         </div>
+        </div>
     </div>
 </section>
+
+<section class="sidebar">
+    <div class="sidebar__block">
+        <div class="sidebar__line"></div>
+        <div class="sidebar__title">стоимость</div>
+
+        <progress class="sidebar__progress"></progress>
+        <div class="sidebar__line"></div>
+        <div class="sidebar__title">цвет</div>
+
+        <form action="" method="get" class="sidebar__form__checkbox">
+
+            <label class="sidebar__checkbox__label">
+                <input type="checkbox" title="Чёрный" class="sidebar__checkbox">
+                <span class="sidebar__checkbox__checkmark"></span>
+                <span class="sidebar__checkbox__label__name">Чёрный</span>
+            </label>
+
+                <label class="sidebar__checkbox__label">
+                    <input type="checkbox" title="Белый" class="sidebar__checkbox">
+                    <span class="sidebar__checkbox__checkmark"></span>
+                    <span class="sidebar__checkbox__label__name">Белый</span>
+                </label>
+
+            <label class="sidebar__checkbox__label">
+                <input type="checkbox" title="Синий" class="sidebar__checkbox">
+                <span class="sidebar__checkbox__checkmark"></span>
+                <span class="sidebar__checkbox__label__name">Синий</span>
+            </label>
+
+            <label class="sidebar__checkbox__label">
+                <input type="checkbox" title="Красный" class="sidebar__checkbox">
+                <span class="sidebar__checkbox__checkmark"></span>
+                <span class="sidebar__checkbox__label__name">Красный</span>
+            </label>
+
+            <label class="sidebar__checkbox__label">
+                <input type="checkbox" title="Розовый" class="sidebar__checkbox">
+                <span class="sidebar__checkbox__checkmark"></span>
+                <span class="sidebar__checkbox__label__name">Розовый</span>
+            </label>
+
+        </form>
+
+        <div class="sidebar__line"></div>
+        <div class="sidebar__title">bluetooth</div>
+
+        <form action="" method="get" class="sidebar__form__radio">
+
+            <label class="sidebar__radio__label">
+                <input type="radio" value="Есть" name="choose" class="sidebar__radio">
+                <span class="sidebar__radio__checkmark"></span>
+                <span class="sidebar__radio__label__name">Есть</span>
+            </label>
+
+            <label class="sidebar__radio__label">
+                <input type="radio" value="Нет"  name="choose"  class="sidebar__radio">
+                <span class="sidebar__radio__checkmark"></span>
+                <span class="sidebar__radio__label__name">Нет</span>
+            </label>
+
+        </form>
+
+        <div class="sidebar__button__block">
+            <div class="sidebar__button__background"></div>
+            <a href="#" class="sidebar__button"><span>показать</span></a>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
