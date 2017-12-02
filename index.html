@@ -10,25 +10,25 @@
 <script>
     $(document).ready(function () {
 
-var input = $('.header__block__form__input');
+var input = $('.header__form__input');
         $(input).focus(function () {
-            $('.header__block__form__button').css("display", "block");
+            $('.header__form__button').css("display", "block");
             $(this).addClass('focus');
         });
         $(input).blur(function () {
-            $('.header__block__form__button').css("display", "none");
+            $('.header__form__button').css("display", "none");
             $(this).removeClass('focus');
         });
 
 
-        $('.header__block2__menu__title').hover(function () {
-            $('.header__block2__menu__nav').show();
+        $('.header__menu__title').hover(function () {
+            $('.header__submenu').show();
         }, function () {
             $(this).click(function () {
-                $('.header__block2__menu__nav').hide();
+                $('.header__submenu').hide();
             });
-            $('.header__block2__menu__nav li').click(function () {
-                $('.header__block2__menu__nav').hide();
+            $('.header__submenu__list-item').click(function () {
+                $('.header__submenu').hide();
             })
         })
 
@@ -36,50 +36,62 @@ var input = $('.header__block__form__input');
 </script>
 <header>
     <div class="wrapper">
-<div class="header_logo"><a href="#">device</a></div>
+<div class="header_logo"><a href="#" class="header__logo-link">device</a></div>
 
-    <div class="header__block">
-        <form class="header__block__form" action="" method="get">
-            <input class="header__block__form__input" type="search" placeholder="Поиск по сайту">
-            <button type="submit" class="header__block__form__button">Найти</button>
+    <div class="header__top">
+        <form class="header__form" action="" method="get">
+            <input class="header__form__input" type="search" placeholder="Поиск по сайту">
+            <button type="submit" class="header__form__button">Найти</button>
         </form>
         <div class="header__inner">
-        <div class="header__block__login">
-            <div class="header__block__login__image"></div>
-            <div class="header__block__login__name">Валентин Петухов</div>
-            <div class="header__block__login__exit"><a href="#">Выйти</a></div>
+        <div class="header__login">
+            <div class="header__login__image"></div>
+            <div class="header__login__name">Валентин Петухов</div>
+            <div class="header__login__exit"><a href="#" class="header__login__exit-link">Выйти</a></div>
         </div>
-        <div class="header__block__comparison">
-            <div class="header__block__comparison__title"><a href="#"> Сравнить</a></div>
+        <div class="header__comparison">
+            <div class="header__comparison__title"><a href="#" class="header__comparison__title-link"> Сравнить</a></div>
         </div>
-        <div class="header__block__basket">
-            <div class="header__block__basket__title"><a href="#"> Корзина</a></div>
+        <div class="header__basket">
+            <div class="header__basket__title"><a href="#" class="header__basket__title-link"> Корзина</a></div>
         </div>
         </div>
     </div>
 
-        <div class="header__block2">
-            <div class="header__block2__menu__title">каталог товаров</div>
+        <div class="header__menu">
+            <div class="header__menu__title">каталог товаров</div>
 
             <div class="header__inner">
-                <div class="header__block2__delivery"><a href="#">доставка</a></div>
-                <div class="header__block2__guarantee"><a href="#">гарантия</a></div>
-                <div class="header__block2__contacts"><a href="#">контакты</a></div>
+                <div class="header__delivery"><a href="#" class="header__delivery-link">доставка</a></div>
+                <div class="header__guarantee"><a href="#" class="header__guarantee-link">гарантия</a></div>
+                <div class="header__contacts"><a href="#" class="header__contacts-link">контакты</a></div>
             </div>
         </div>
 
-        <div class="header__block2__menu__nav">
-            <ul>
-                <li><a href="#">Виртуальная реальность</a></li>
-                <li><a href="#">Моноподы для селфи</a></li>
-                <li><a href="#">Экшн-камеры</a></li>
+        <div class="header__submenu">
+            <ul class="header__submenu__list">
+                <li class="header__submenu__list-item">
+                    <a href="#" class="header__submenu__list-link">Виртуальная реальность</a>
+                </li>
+                <li class="header__submenu__list-item">
+                    <a href="#" class="header__submenu__list-link">Моноподы для селфи</a>
+                </li>
+                <li class="header__submenu__list-item">
+                    <a href="#" class="header__submenu__list-link">Экшн-камеры</a>
+                </li>
             </ul>
-            <ul>
-                <li><a href="#">Фитнес-браслеты</a></li>
-                <li><a href="#">Умные часы</a></li>
+            <ul class="header__submenu__list">
+                <li class="header__submenu__list-item">
+                    <a href="#" class="header__submenu__list-link">Фитнес-браслеты</a>
+                </li>
+                <li class="header__submenu__list-item">
+                    <a href="#" class="header__submenu__list-link">Умные часы</a>
+                </li>
             </ul>
-            <ul>
-                <li><a href="#">Квадрокоптеры</a></li>
+            <ul class="header__submenu__list">
+                <li class="header__submenu__list-item">
+                    <a href="#" class="header__submenu__list-link">Квадрокоптеры</a>
+                </li>
             </ul>
         </div>
 
