@@ -96,7 +96,7 @@ header {
     margin: 0 auto;
     width: 1036px;
 }
-.header_logo {
+.header__logo {
     position: relative;
     top: -22px;
     font-family: 'Gilroy-ExtraBold', Verdana, sans-serif;
@@ -124,7 +124,7 @@ header {
     display: inline-block;
 }
 
-.header__form__input {
+.header__form-input {
     background: transparent url("icons/search.png") center left no-repeat;
     border: none;
     font-family: OpenSans-Light, Verdana, sans-serif;
@@ -134,7 +134,7 @@ header {
     padding-left: 26px;
     float: left;
 }
-.header__form__input:hover {
+.header__form-input:hover {
     color: #635a3c;
 }
 .focus {
@@ -145,7 +145,7 @@ header {
     float: left;
     width: 356px;
 }
-.header__form__button {
+.header__form-button {
     border: 2px solid black;
     padding: 17px;
     background: none;
@@ -154,12 +154,12 @@ header {
     float: left;
     display: none;
 }
-.header__form__button:hover {
+.header__form-button:hover {
     background: black;
     color: white;
     font-size: 15px;
 }
-.header__form__button:active {
+.header__form-button:active {
     color: #4d4d4d;
 }
 
@@ -170,7 +170,7 @@ header {
 .header__login {
     display: inline-block;
 }
-.header__login__image {
+.header__login-image {
     background: transparent url("icons/user.png");
     height: 12px;
     width: 13px;
@@ -178,22 +178,22 @@ header {
     margin-right: 10px;
 }
 
-.header__login__name, .header__login__exit {
+.header__login-name, .header__login-exit {
     font-family: OpenSans-Light, Verdana, sans-serif;
     font-size: 15px;
     display: inline-block;
     color: black;
 }
 
-.header__login__exit-link {
+.header__login-exit-link {
  text-decoration: none;
     color: #d2c07f;
     margin-left: 19px;
 }
-.header__login__exit-link:hover {
+.header__login-exit-link:hover {
     color: #635a3c;
 }
-.header__login__exit-link:active {
+.header__login-exit-link:active {
     color: #4d4d4d;
 }
 
@@ -202,13 +202,13 @@ header {
     margin-left: 64px;
 
 }
-.header__comparison__title-link, .header__basket__title-link {
+.header__comparison-title-link, .header__basket-title-link {
     font-family: OpenSans-Light, Verdana, sans-serif;
     font-size: 15px;
     text-decoration: none;
     color: black;
 }
-.header__comparison__title:before {
+.header__comparison-title:before {
     content: url("icons/comparison.png");
     padding-right: 10px;
 
@@ -224,7 +224,7 @@ header {
     display: inline-block;
     margin-left: 42px;
 }
-.header__basket__title:before {
+.header__basket-title:before {
     content: url("icons/basket.png");
     padding-right: 10px;
 }
@@ -234,7 +234,7 @@ header {
 
 }
 
-.header__menu__title, .header__delivery, .header__guarantee, .header__contacts {
+.header__menu-title, .header__delivery, .header__guarantee, .header__contacts {
     display: inline-block;
     font-family: 'Gilroy-ExtraBold', Verdana, sans-serif;
     font-size: 18px;
@@ -244,20 +244,20 @@ header {
     margin-bottom: 40px;
     cursor: pointer;
 }
-.header__menu__title:after {
+.header__menu-title:after {
     content: url("icons/plus.png");
     padding-left: 16px;
     vertical-align: -2px;
     cursor: pointer;
 }
 
-.header__menu__title:hover, .header__delivery:hover, .header__guarantee:hover,
+.header__menu-title:hover, .header__delivery:hover, .header__guarantee:hover,
 .header__contacts:hover,
 .header__block2__menu__nav li:hover
 {
     opacity: 0.6;
 }
-.header__menu__title:active, .header__delivery:active, .header__guarantee:active,
+.header__menu-title:active, .header__delivery:active, .header__guarantee:active,
 .header__contacts:active,
 .header__block2__menu__nav li:active{
     opacity: 0.3;
@@ -277,17 +277,17 @@ header {
 .header__submenu {
     display: none;
 }
-.header__submenu__list {
+.header__submenu-list {
     display: inline-block;
     vertical-align: top;
     margin-right: 75px;
 }
-.header__submenu__list-item {
+.header__submenu-list-item {
     font-family: OpenSans-Light, Verdana, sans-serif;
     font-size: 15px;
     line-height: 36px;
 }
-.header__submenu__list-link {
+.header__submenu-list-link {
     text-decoration: none;
     color: black;
 }

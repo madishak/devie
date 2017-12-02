@@ -10,24 +10,24 @@
 <script>
     $(document).ready(function () {
 
-var input = $('.header__form__input');
+var input = $('.header__form-input');
         $(input).focus(function () {
-            $('.header__form__button').css("display", "block");
+            $('.header__form-button').css("display", "block");
             $(this).addClass('focus');
         });
         $(input).blur(function () {
-            $('.header__form__button').css("display", "none");
+            $('.header__form-button').css("display", "none");
             $(this).removeClass('focus');
         });
 
 
-        $('.header__menu__title').hover(function () {
+        $('.header__menu-title').hover(function () {
             $('.header__submenu').show();
         }, function () {
             $(this).click(function () {
                 $('.header__submenu').hide();
             });
-            $('.header__submenu__list-item').click(function () {
+            $('.header__submenu-list-item').click(function () {
                 $('.header__submenu').hide();
             })
         })
@@ -36,30 +36,30 @@ var input = $('.header__form__input');
 </script>
 <header>
     <div class="wrapper">
-<div class="header_logo"><a href="#" class="header__logo-link">device</a></div>
+<div class="header__logo"><a href="#" class="header__logo-link">device</a></div>
 
     <div class="header__top">
         <form class="header__form" action="" method="get">
-            <input class="header__form__input" type="search" placeholder="Поиск по сайту">
-            <button type="submit" class="header__form__button">Найти</button>
+            <input class="header__form-input" type="search" placeholder="Поиск по сайту">
+            <button type="submit" class="header__form-button">Найти</button>
         </form>
         <div class="header__inner">
         <div class="header__login">
-            <div class="header__login__image"></div>
-            <div class="header__login__name">Валентин Петухов</div>
-            <div class="header__login__exit"><a href="#" class="header__login__exit-link">Выйти</a></div>
+            <div class="header__login-image"></div>
+            <div class="header__login-name">Валентин Петухов</div>
+            <div class="header__login-exit"><a href="#" class="header__login-exit-link">Выйти</a></div>
         </div>
         <div class="header__comparison">
-            <div class="header__comparison__title"><a href="#" class="header__comparison__title-link"> Сравнить</a></div>
+            <div class="header__comparison-title"><a href="#" class="header__comparison-title-link"> Сравнить</a></div>
         </div>
         <div class="header__basket">
-            <div class="header__basket__title"><a href="#" class="header__basket__title-link"> Корзина</a></div>
+            <div class="header__basket-title"><a href="#" class="header__basket-title-link"> Корзина</a></div>
         </div>
         </div>
     </div>
 
         <div class="header__menu">
-            <div class="header__menu__title">каталог товаров</div>
+            <div class="header__menu-title">каталог товаров</div>
 
             <div class="header__inner">
                 <div class="header__delivery"><a href="#" class="header__delivery-link">доставка</a></div>
@@ -69,28 +69,28 @@ var input = $('.header__form__input');
         </div>
 
         <div class="header__submenu">
-            <ul class="header__submenu__list">
-                <li class="header__submenu__list-item">
-                    <a href="#" class="header__submenu__list-link">Виртуальная реальность</a>
+            <ul class="header__submenu-list">
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Виртуальная реальность</a>
                 </li>
-                <li class="header__submenu__list-item">
-                    <a href="#" class="header__submenu__list-link">Моноподы для селфи</a>
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Моноподы для селфи</a>
                 </li>
-                <li class="header__submenu__list-item">
-                    <a href="#" class="header__submenu__list-link">Экшн-камеры</a>
-                </li>
-            </ul>
-            <ul class="header__submenu__list">
-                <li class="header__submenu__list-item">
-                    <a href="#" class="header__submenu__list-link">Фитнес-браслеты</a>
-                </li>
-                <li class="header__submenu__list-item">
-                    <a href="#" class="header__submenu__list-link">Умные часы</a>
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Экшн-камеры</a>
                 </li>
             </ul>
-            <ul class="header__submenu__list">
-                <li class="header__submenu__list-item">
-                    <a href="#" class="header__submenu__list-link">Квадрокоптеры</a>
+            <ul class="header__submenu-list">
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Фитнес-браслеты</a>
+                </li>
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Умные часы</a>
+                </li>
+            </ul>
+            <ul class="header__submenu-list">
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Квадрокоптеры</a>
                 </li>
             </ul>
         </div>
