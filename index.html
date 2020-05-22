@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Device</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="js/jquery-3.1.1.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+
+var input = $('.header__form-input');
+        $(input).focus(function () {
+            $('.header__form-button').css("display", "block");
+            $(this).addClass('focus');
+        });
+        $(input).blur(function () {
+            $('.header__form-button').css("display", "none");
+            $(this).removeClass('focus');
+        });
+
+
+        $('.header__menu-title').hover(function () {
+            $('.header__submenu').show();
+        }, function () {
+            $(this).click(function () {
+                $('.header__submenu').hide();
+            });
+            $('.header__submenu-list-item').click(function () {
+                $('.header__submenu').hide();
+            })
+        })
+
+    })
+</script>
+<header>
+    <div class="wrapper">
+<div class="header__logo"><a href="#" class="header__logo-link">device</a></div>
+
+    <div class="header__top">
+        <form class="header__form" action="" method="get">
+            <input class="header__form-input" type="search" placeholder="Поиск по сайту">
+            <button type="submit" class="header__form-button">Найти</button>
+        </form>
+        <div class="header__inner">
+        <div class="header__login">
+            <div class="header__login-image"></div>
+            <div class="header__login-name">Валентин Петухов</div>
+            <div class="header__login-exit"><a href="#" class="header__login-exit-link">Выйти</a></div>
+        </div>
+        <div class="header__comparison">
+            <div class="header__comparison-title"><a href="#" class="header__comparison-title-link"> Сравнить</a></div>
+        </div>
+        <div class="header__basket">
+            <div class="header__basket-title"><a href="#" class="header__basket-title-link"> Корзина</a></div>
+        </div>
+        </div>
+    </div>
+
+        <div class="header__menu">
+            <div class="header__menu-title">каталог товаров</div>
+
+            <div class="header__inner">
+                <div class="header__delivery"><a href="#" class="header__delivery-link">доставка</a></div>
+                <div class="header__guarantee"><a href="#" class="header__guarantee-link">гарантия</a></div>
+                <div class="header__contacts"><a href="#" class="header__contacts-link">контакты</a></div>
+            </div>
+        </div>
+
+        <div class="header__submenu">
+            <ul class="header__submenu-list">
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Виртуальная реальность</a>
+                </li>
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Моноподы для селфи</a>
+                </li>
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Экшн-камеры</a>
+                </li>
+            </ul>
+            <ul class="header__submenu-list">
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Фитнес-браслеты</a>
+                </li>
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Умные часы</a>
+                </li>
+            </ul>
+            <ul class="header__submenu-list">
+                <li class="header__submenu-list-item">
+                    <a href="#" class="header__submenu-list-link">Квадрокоптеры</a>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</header>
+
+<section class="breadcrumbs">
+    <div class="wrapper">
+    <div class="breadcrumbs__title">Моноподы для селфи</div>
+
+        <div class="breadcrumbs__nav">
+            <ul>
+                <li>
+                    <a href="#">Главная</a>
+                    <img src="icons/breadcrumb_array.png">
+                </li>
+                <li>
+                    <a href="#">Каталог товаров</a>
+                    <img src="icons/breadcrumb_array.png">
+               </li>
+                <li><a href="#">Моноподы для селфи</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="panel">
+
+    <div class="panel__title"><div>фильтр:</div></div>
+    <div class="panel__menu">
+        <div class="panel__inner">
+        <div class="panel__menu__title">сортировка:</div>
+        <div class="panel__menu__text"><a href="#">По цене</a></div>
+        <div class="panel__menu__text"><a href="#">По типу</a></div>
+        <div class="panel__menu__text"><a href="#">По популярности</a></div>
+        <div class="panel__menu__block">
+        <div class="panel__menu__sort__up"></div>
+        <div class="panel__menu__sort__down"></div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="sidebar">
+    <div class="sidebar__block">
+        <div class="sidebar__line"></div>
+        <div class="sidebar__title">стоимость</div>
+
+        <progress class="sidebar__progress"></progress>
+        <div class="sidebar__line"></div>
+        <div class="sidebar__title">цвет</div>
+
+        <form action="" method="get" class="sidebar__form__checkbox">
+
+            <label class="sidebar__checkbox__label">
+                <input type="checkbox" title="Чёрный" class="sidebar__checkbox">
+                <span class="sidebar__checkbox__checkmark"></span>
+                <span class="sidebar__checkbox__label__name">Чёрный</span>
+            </label>
+
+                <label class="sidebar__checkbox__label">
+                    <input type="checkbox" title="Белый" class="sidebar__checkbox">
+                    <span class="sidebar__checkbox__checkmark"></span>
+                    <span class="sidebar__checkbox__label__name">Белый</span>
+                </label>
+
+            <label class="sidebar__checkbox__label">
+                <input type="checkbox" title="Синий" class="sidebar__checkbox">
+                <span class="sidebar__checkbox__checkmark"></span>
+                <span class="sidebar__checkbox__label__name">Синий</span>
+            </label>
+
+            <label class="sidebar__checkbox__label">
+                <input type="checkbox" title="Красный" class="sidebar__checkbox">
+                <span class="sidebar__checkbox__checkmark"></span>
+                <span class="sidebar__checkbox__label__name">Красный</span>
+            </label>
+
+            <label class="sidebar__checkbox__label">
+                <input type="checkbox" title="Розовый" class="sidebar__checkbox">
+                <span class="sidebar__checkbox__checkmark"></span>
+                <span class="sidebar__checkbox__label__name">Розовый</span>
+            </label>
+
+        </form>
+
+        <div class="sidebar__line"></div>
+        <div class="sidebar__title">bluetooth</div>
+
+        <form action="" method="get" class="sidebar__form__radio">
+
+            <label class="sidebar__radio__label">
+                <input type="radio" value="Есть" name="choose" class="sidebar__radio">
+                <span class="sidebar__radio__checkmark"></span>
+                <span class="sidebar__radio__label__name">Есть</span>
+            </label>
+
+            <label class="sidebar__radio__label">
+                <input type="radio" value="Нет"  name="choose"  class="sidebar__radio">
+                <span class="sidebar__radio__checkmark"></span>
+                <span class="sidebar__radio__label__name">Нет</span>
+            </label>
+
+        </form>
+
+        <div class="sidebar__button__block">
+            <div class="sidebar__button__background"></div>
+            <a href="#" class="sidebar__button"><span>показать</span></a>
+        </div>
+    </div>
+</section>
+
+
+<section class="content">
+    <div class="content__inner">
+        <div class="content__block">
+            <div class="content__image1">
+
+                <div class="content__image__opacity">
+                <div class="content__image__button__block">
+                    <div class="content__image__button__background"></div>
+                    <a href="#" class="content__image__button"><span>в корзину</span></a>
+                </div>
+
+                <div class="content__image__caption"><a href="#">Добавить к сравнению</a></div>
+                </div>
+
+            </div>
+            <div class="content__text">
+                <div class="content__text__caption">Любительская селфи-палка</div>
+                <div class="content__text__cost">500руб</div>
+            </div>
+        </div>
+
+        <div class="content__block">
+            <div class="content__image2">
+
+                <div class="content__image__opacity">
+                <div class="content__image__button__block">
+                    <div class="content__image__button__background"></div>
+                    <a href="#" class="content__image__button"><span>в корзину</span></a>
+                </div>
+
+                <div class="content__image__caption"><a href="#">Добавить к сравнению</a></div>
+                </div></div>
+            <div class="content__text">
+                <div class="content__text__caption">Профессиональная селфи-палка</div>
+                <div class="content__text__cost">1500 руб</div>
+            </div>
+        </div>
+
+        <div class="content__block">
+            <div class="content__image3">
+
+                <div class="content__image__opacity">
+                <div class="content__image__button__block">
+                    <div class="content__image__button__background"></div>
+                    <a href="#" class="content__image__button"><span>в корзину</span></a>
+                </div>
+
+                <div class="content__image__caption"><a href="#">Добавить к сравнению</a></div>
+                </div></div>
+            <div class="content__text">
+                <div class="content__text__caption">Непотопляемая селфи-палка</div>
+                <div class="content__text__cost">2500 руб</div>
+            </div>
+        </div>
+
+        <div class="content__block">
+            <div class="content__image4">
+
+                <div class="content__image__opacity">
+                <div class="content__image__button__block">
+                    <div class="content__image__button__background"></div>
+                    <a href="#" class="content__image__button"><span>в корзину</span></a>
+                </div>
+
+                <div class="content__image__caption"><a href="#">Добавить к сравнению</a></div>
+                </div></div>
+            <div class="content__text">
+                <div class="content__text__caption">Селфи-палка 	&laquo;Следуй за мной&raquo;</div>
+                <div class="content__text__cost">4900 руб</div>
+            </div>
+        </div>
+
+
+        <div class="content__pagination">
+            <div class="content__pagination__prev"><a href="#">назад</a></div>
+
+            <div class="content__pagination__page">
+                <div class="content__pagination__page__block">
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                </div>
+            </div>
+
+            <div class="content__pagination__next"><a href="#">вперед</a></div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="wrapper">
+        <div class="footer__block1">
+        <div class="footer__logo"><a href="#">device</a></div>
+            <div class="footer__text__exit"><a href="#">Выйти</a></div>
+            <div class="footer__text__comparison"><a href="#">Сравнить</a></div>
+            <div class="footer__text__basket"><a href="#">Корзина</a></div>
+        </div>
+
+        <div class="footer__block2">
+            <div class="footer__text1">г. Москва, ул. Строителей, 15</div>
+            <div class="footer__menu">
+                <div class="footer__menu__text">
+                    <a href="#">доставка</a>
+                    <a href="#">гарантия</a>
+                    <a href="#">контакты</a>
+                </div>
+            </div>
+            <div class="footer__text2">Тел.: +7 (495) 495-95-95</div>
+        </div>
+
+        <div class="footer__block3">
+            <div class="footer_line"></div>
+            <div class="footer__menu">
+                <div class="footer__icons">
+                    <a href="#"><div class="footer__icons__facebook"></div> </a>
+                    <a href="#"><div class="footer__icons__instagram"></div> </a>
+                    <a href="#"><div class="footer__icons__tweet"></div> </a>
+                </div>
+            </div>
+            <a href="#"><div class="footer__htmlacademy"></div></a>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
